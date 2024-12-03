@@ -76,13 +76,6 @@ function removeOccurrences(data, value) {
     return result;
 }
 
-// Usage Examples
-
-// Testing the insert function
-console.log(insert([1, 2, 3], 1, 4)); // Output: [1, 4, 2, 3]
-
-// Testing the delete function
-console.log(deleteElement([1, 2, 3], 1)); // Output: [1, 3]
-
-// Testing the removeOccurrences function
-console.log(removeOccurrences([1, 2, 3, 2], 2)); // Output: [1, 3]
+console.log(insert([1, 2, 3], 1, 4));
+console.log(deleteElement([1, 2, 3], 1));
+console.log(removeOccurrences([1, 2, 3, 2], 2));
