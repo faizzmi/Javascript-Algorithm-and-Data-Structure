@@ -55,18 +55,15 @@ function deleteElement(data, index) {
  */
 function removeOccurrences(data, value) {
     let count = 0;
-
-    // Count the occurrences of the value
     for (let i = 0; i < data.length; i++) {
         if (data[i] === value) {
             count++;
         }
     }
 
-    const result = new Array(data.length - count); // Create a new array with the reduced size
+    const result = new Array(data.length - count);
     let j = 0;
 
-    // Copy only elements that are not equal to the value
     for (let i = 0; i < data.length; i++) {
         if (data[i] !== value) {
             result[j++] = data[i];
