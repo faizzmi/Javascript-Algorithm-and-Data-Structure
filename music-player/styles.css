@@ -1,19 +1,25 @@
 :root {
-    /* colors */
-    --primary-color: #dfdfe2;
-    --secondary-color: #ffffff;
-    --app-background-color: #4d4d62;
-    --background-color: #1b1b32;
-    --foreground-color: #3b3b4f;
-    --highlight-color: #f1be32;
+    /* Spotify-inspired colors */
+    --primary-color: #ffffff;
+    /* White for text */
+    --secondary-color: #b3b3b3;
+    /* Light gray for secondary text */
+    --app-background-color: #121212;
+    /* Black for the main background */
+    --background-color: #181818;
+    /* Very dark gray for panels */
+    --foreground-color: #282828;
+    /* Medium dark gray for dividers and bars */
+    --highlight-color: #1db954;
+    /* Spotify green for accents */
 
     /* font sizes */
     --root-font-size: 16px;
     font-size: var(--root-font-size);
 
     /* font-families */
-    --font-headline: "Roboto Mono", monospace;
-    --font-family: "Lato", sans-serif;
+    --font-headline: "Circular Std", sans-serif;
+    --font-family: "Arial", sans-serif;
 }
 
 *,
