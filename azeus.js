@@ -7,6 +7,7 @@
  * @param {number} value - The value to insert.
  * @return {number[]} The new array with the value inserted.
  */
+
 function insert(data, index, value) {
     const result = new Array(data.length + 1); // Create a new array with an increased size
     const insertIndex = Math.min(Math.max(index, 0), data.length); // Clamp index to valid bounds
