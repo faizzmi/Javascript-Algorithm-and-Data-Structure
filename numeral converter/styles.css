@@ -1,0 +1,120 @@
+/* Global Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Root Variables for Colors and Spacing */
+:root {
+    --primary-color: #007bff;
+    /* Blue */
+    --secondary-color: #28a745;
+    /* Green */
+    --background-color: #f4f7fa;
+    /* Light background */
+    --card-bg: #ffffff;
+    /* White */
+    --text-color: #333;
+    /* Dark text for readability */
+    --button-hover: #0056b3;
+    /* Darker blue for hover */
+    --border-radius: 12px;
+    --transition-speed: 0.3s;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Title */
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+/* Input Styling */
+input {
+    width: 70%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: var(--border-radius);
+    transition: border-color var(--transition-speed);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Button Styling */
+button {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+/* Output Container */
+.output-container {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
