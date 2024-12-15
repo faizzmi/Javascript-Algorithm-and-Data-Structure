@@ -1,0 +1,149 @@
+/* General Reset and Box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #007bff;
+    /* Blue accent color */
+    --secondary-color: #28a745;
+    /* Green accent for highlights */
+    --background-color: #f8f9fa;
+    /* Light background */
+    --dark-text: #333;
+    /* Dark text for readability */
+    --card-bg: #ffffff;
+    /* White cards */
+    --shadow: rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    --border-radius: 12px;
+    /* Rounded corners */
+    --transition-speed: 0.3s;
+    /* Smooth hover transition */
+}
+
+/* Body Styling */
+body {
+    background-color: var(--background-color);
+    color: var(--dark-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Team Stats Section */
+.team-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+}
+
+.team-stats p {
+    margin: 0.5rem;
+}
+
+/* Filter Section */
+.filter {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.options-label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+select {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color var(--transition-speed);
+}
+
+select:hover {
+    border-color: var(--primary-color);
+}
+
+/* Card Section */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.player-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    width: 250px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px var(--shadow);
+    text-align: center;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    overflow: hidden;
+    /* To prevent text overflow */
+}
+
+.player-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px var(--shadow);
+}
+
+.player-card h2 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.player-card p {
+    font-size: 1.2rem;
+    color: var(--dark-text);
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    color: var(--dark-text);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player-card {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Modern JavaScript Methods by Building Football Team Cards</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Football Team Stats</h1>
+    </header>
+    <main>
+        <section class="team-stats">
+            <p>Team: <span id="team"></span></p>
+            <p>Sport: <span id="sport"></span></p>
+            <p>Year: <span id="year"></span></p>
+            <p>Head Coach: <span id="head-coach"></span></p>
+        </section>
+        <section class="filter">
+            <label class="options-label" for="players">Filter Players:</label>
+            <select name="players" id="players">
+                <option value="all">All Players</option>
+                <option value="nickname">Nicknames</option>
+                <option value="forward">Position Forward</option>
+                <option value="midfielder">Position Midfielder</option>
+                <option value="defender">Position Defender</option>
+                <option value="goalkeeper">Position Goalkeeper</option>
+            </select>
+        </section>
+        <section class="cards" id="player-cards">
+            <!-- Player Cards will be dynamically generated here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Football Team Stats</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
