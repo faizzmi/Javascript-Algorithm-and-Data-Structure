@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.js">
+    </script>
+</head>
+<body>
+    <div class="search-bar">
+        <form role="search" id="search-form">
+            <label for="searh-input"></label>
+            <input type="text" name="pokemon" id="searh-input" required>
+            <button id="search-button">Search</button>
+        </form>
+    </div>
+
+    <section class="card-list">
+        <div class="card">
+            <div class="card-header">
+                <span id="pokemon-name">Pikachu</span> 
+                <span id="pokemon-id">#25</span>
+            </div>
+            <div class="card-image" id="pokemon-img-container">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu Image"
+                    id="pokemon-img">
+            </div>
+            <div class="card-details" id="pokemon-details">
+                <div class="details" id="pokemon-type"><strong>Type:</strong> Electric</div>
+                <div class="details" id="pokemon-height"><strong>Height:</strong> 4 decimeters</div>
+                <div class="details" id="pokemon-weight"><strong>Weight:</strong> 60 hectograms</div>
+            </div>
+            <div class="card-footer">Powered by PokeAPI</div>
+        </div>
+        <div class="stats">
+            <h2>Stats Detail:</h2>
+            <div>
+                <canvas id="radarChart" width="400" height="200"></canvas>
+            </div>
+
+            <div class="details" id="pokemon-hp"><strong>HP:</strong> 35</div>
+            <div class="details" id="pokemon-attack"><strong>Attack:</strong> 55</div>
+            <div class="details" id="pokemon-defense"><strong>Defense:</strong> 40</div>
+            <div class="details" id="pokemon-special-attack"><strong>Special Attack:</strong> 50</div>
+            <div class="details" id="pokemon-special-defense"><strong>Special Defense:</strong> 50</div>
+            <div class="details" id="pokemon-speed"><strong>Speed:</strong> 90</div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>
