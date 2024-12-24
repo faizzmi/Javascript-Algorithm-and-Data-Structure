@@ -9,6 +9,7 @@ const sortInputArray = (event) => {
 
 //   const sortedValues = bubbleSort(inputValues);
 //   const sortedValues = selectionSort(inputValues);
+  // const sortedValues = inputValues.sort((a,b)=>{return a - b});
   const sortedValues = insertionSort(inputValues);
 
   updateUI(sortedValues);
