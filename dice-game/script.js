@@ -48,7 +48,6 @@ function updateRadioOption(index, score){
 }
 
 function getHighestDuplicates(array) {
-    function getHighestDuplicates(array) {
     if (!Array.isArray(array)) {
         console.error("Input is not a valid array:", array);
         return;
@@ -81,7 +80,6 @@ function getHighestDuplicates(array) {
     }
 
     updateRadioOption(2, 0);
-}
 }
 
 
