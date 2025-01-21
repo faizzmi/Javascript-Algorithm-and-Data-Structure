@@ -1,0 +1,65 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f7fafc;
+}
+
+.stack-area {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.right {
+    position: relative;
+    flex-basis: 50%;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 350px;
+    margin-top: -175px;
+    margin-left: -175px;
+    border-radius: 25px;
+    transition: transform 0.5s ease-in-out, z-index 0.2s ease;
+    will-change: transform;
+}
+
+.card-1 {
+    background-color: #FF5733;
+}
+
+.card-2 {
+    background-color: #33FF57;
+}
+
+.card-3 {
+    background-color: #5733FF;
+}
+
+.card-4 {
+    background-color: #FFD700;
+}
+
+.card-5 {
+    background-color: #33D4FF;
+}
+
+.away {
+    transform-origin: bottom left;
+}
